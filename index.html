@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO</title>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    .link1::after {
+      content: " ";
+      width: 90px !important;
+      height: 2px !important;
+      background-color: rgb(78, 78, 255);
+      position: absolute;
+      top: 302px;
+      left: 90px;
+
+    }
+
+    .link2:hover::after {
+      content: " ";
+      width: 90px !important;
+      height: 2px !important;
+      background-color: rgb(78, 78, 255);
+      position: absolute;
+      top: 335px;
+      left: 90px;
+      animation-name: underline;
+      animation-duration: 3s;
+    }
+
+    .link3:hover::after {
+      content: " ";
+      width: 90px !important;
+      height: 2px !important;
+      background-color: rgb(78, 78, 255);
+      position: absolute;
+      top: 375px;
+      left: 90px;
+      animation-name: underline;
+      animation-duration: 3s;
+    }
+
+    .link4:hover::after {
+      content: " ";
+      width: 90px !important;
+      height: 2px !important;
+      background-color: rgb(78, 78, 255);
+      position: absolute;
+      top: 405px;
+      left: 90px;
+      animation-name: underline;
+      animation-duration: 3s;
+    }
+
+    .link5:hover::after {
+      content: " ";
+      width: 110px !important;
+      height: 2px !important;
+      background-color: rgb(78, 78, 255);
+      position: absolute;
+      top: 440px;
+      left: 80px;
+      animation-name: underline;
+      animation-duration: 3s;
+    }
+
+    .link6:hover::after {
+      content: " ";
+      width: 100px !important;
+      height: 2px !important;
+      background-color: rgb(78, 78, 255);
+      position: absolute;
+      top: 476px;
+      left: 87px;
+      animation-name: underline;
+      animation-duration: 3s;
+    }
+
+    .link7:hover::after {
+      content: " ";
+      width: 85px !important;
+      height: 2px !important;
+      background-color: rgb(78, 78, 255);
+      position: absolute;
+      top: 512px;
+      left: 93px;
+      animation-name: underline;
+      animation-duration: 3s;
+    }
+
+    .link8:hover::after {
+      content: " ";
+      width: 80px !important;
+      height: 2px !important;
+      background-color: rgb(78, 78, 255);
+      position: absolute;
+      top: 545px;
+      left: 98px;
+      animation-name: underline;
+      animation-duration: 3s;
+    }
+
+    .link9:hover::after {
+      content: " ";
+      width: 90px !important;
+      height: 2px !important;
+      background-color: rgb(78, 78, 255);
+      position: absolute;
+      top: 581px;
+      left: 90px;
+      animation-name: underline;
+      animation-duration: 3s;
+    }
+
+    .link1:active,
+    .link2:active,
+    .link3:active,
+    .link4:active,
+    .link5:active,
+    .link6:active,
+    .link7:active,
+    .link8:active,
+    .link9:active {
+      color: rgb(67, 67, 255) !important;
+    }
+
+    .h2 {
+      margin-top: 170px;
+      margin-left: 7%;
+      font-size: 3rem;
+      width: 400px;
+      line-height: 70px;
+      position: relative;
+      animation-name: slider;
+      animation-duration: 2s;
+      animation-timeline: view();
+    }
+
+    .h2 span {
+      display: block;
+      color: rgb(74, 74, 255);
+    }
+
+    #p {
+      margin-left: 5%;
+      width: 310px;
+      color: lightslategray;
+      font-weight: 600;
+    }
+
+    #p a {
+      text-decoration: none;
+      color: rgb(74, 74, 255);
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    @keyframes slider {
+      0% {
+        left: -150px;
+        opacity: 30;
+      }
+
+      100% {
+        left: 0px;
+        opacity: 0;
+      }
+    }
+
+    @keyframes underline {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 30;
+      }
+    }
+
+    .button:hover {
+      cursor: pointer;
+      color: black !important;
+    }
+
+    .border-bottom {
+      width: 180px;
+      margin: 5px 10px;
+      height: 150px;
+      box-shadow: 2px 2px 20px 10px rgb(238, 238, 238);
+      text-align: center;
+      padding: 10px !important;
+    }
+
+    .border-bottom i {
+      font-size: 3rem;
+      margin-left: -120px !important;
+      position: relative;
+      top: 2px;
+    }
+
+    .ri-lightbulb-line {
+      color: #9EC5FE;
+    }
+
+    .ri-map-pin-line {
+      color: #F1AEB5;
+    }
+
+    .ri-coins-line {
+      color: #FFC107;
+    }
+
+    .ri-smartphone-line {
+      color: #0D6EFD;
+    }
+
+    .style:hover {
+      cursor: pointer;
+      font-weight: 600;
+      border: 2px solid !important;
+    }
+
+    .d-flex .card-body {
+      width: 250px;
+    }
+
+    .card {
+      width: 260px !important;
+      height: 320px !important;
+      text-align: center;
+      margin-top: 50px;
+      box-shadow: 2px 2px 20px 20px rgb(224, 224, 224);
+    }
+
+    .card-img-top {
+      width: 120px;
+      height: 120px;
+      position: relative;
+      left: 65px;
+      top: -50px;
+    }
+
+    .card .card-title {
+      margin-top: -50px !important;
+    }
+
+    .card .card-text {
+      margin-top: 30px;
+      color: lightslategray;
+    }
+    .img{
+      width: 380px;
+      height: 250px;
+      box-shadow: 2px 2px 10px 10px rgb(225, 225, 225);
+      transition: 0.6;
+    }
+    .img:hover::after{
+      cursor: pointer;
+      visibility: visible;
+    }
+    .img::after{
+      content: "Assignent";
+      text-align: center;
+      font-size: 3rem;
+      margin-left: -290px;
+      color: rgb(165, 165, 165);
+      text-shadow: grey;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: black;
+      box-shadow: 2px 2px 10px 10px rgba(227, 227, 227, 0.312);
+      background-color: rgba(227, 227, 227, 0.312);
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body id="top" style="display: flex;">
+  <nav class="navbar bg-body-tertiary ms-5 fixed-top "
+    style="width: 18rem; height: 41rem !important; background-color: #F2F3F7 !important; overflow-y: scroll;">
+    <img src="img/my image.avif" class="rounded-5 mx-auto"
+      style="width: 150px; height: 150px; border-radius: 250px !important; margin-top: 20px !important;">
+    <h3 class="text-center fs-3 mx-auto mt-4" style="margin-top:0px ;">INSHARAH <span
+        style="color: rgb(67, 67, 255);">IRFAN</span> </h3>
+    <ul class="nav nav-underline d-flex flex-column align-items-center"
+      style="margin: auto; width: 100px; margin-top: -18px;">
+      <li class="  link1 mt-5" style="margin-top: -5px;">
+        <a class="" style="color: rgb(67, 67, 255); text-decoration: none;" aria-crrent="page" href="#">HOME</a>
+      </li>
+      <li class="link2" style="margin-top: -5px;">
+        <a class="" style="color: black; text-decoration: none;" href="#top">ABOUT</a>
+      </li>
+      <li class="link3" style="margin-top: -5px;">
+        <a class="" style="color: black; text-decoration: none;" href="#">SERVICES</a>
+      </li>
+      <li class="link4" style="margin-top: -5px;">
+        <a class="" style="color: black; text-decoration: none;" href="#">SKILLS</a>
+      </li>
+      <li class="link5" style="margin-top: -5px;">
+        <a class="" style="color: black; text-decoration: none;" href="#">EDUCATION</a>
+      </li>
+      <li class="link6" style="margin-top: -5px;">
+        <a class="" style="color: black; text-decoration: none;" href="#">EXPERIENCE</a>
+      </li>
+      <li class="link7" style="margin-top: -5px;">
+        <a class="" style="color: black; text-decoration: none;" href="#">WORK</a>
+      </li>
+      <li class="link8" style="margin-top: -5px;">
+        <a class="" style="color: black; text-decoration: none;" href="#">BLOG</a>
+      </li>
+      <li class="link9" style="margin-top: -5px;">
+        <a class="" style="color: black; text-decoration: none;" href="#">CONTACT</a>
+      </li>
+    </ul>
+    <p class="fs-9 mx-2 text-center mt-5 text-secondary">© Copyright ©2024 All rights reserved | This template is made
+      with by Colorlib
+      Demo Images: Unsplash.com</p>
+    </div>
+  </nav>
+  </div>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"
+    style="margin-left: 335px; width: 1100px; height: 100vh;">
+    <div class="carousel-inner">
+      <div class="carousel-item  active">
+        <div src="img/img1 (1).jpg" class="d-block w-70" alt="..."
+          style="width: 1000px; height: 100vh;background-image: url(img/img1\ \(1\).jpg);background-repeat: no-repeat;background-position: center;">
+          &nbsp; <h2 class="h2">Hi! I AM A
+            <span> WEB DEVELOPER </span>
+          </h2>
+          <p id="p">THis is my introduction template made by <a href="https://github.com/DeveloperInsharah">@ Insharah
+              Irfan</a></p>
+          <div class="button"
+            style="border: 2px solid;width: 180px;height: 50px; color: black; margin-left: 5%;text-align: center;padding-top: 9px;color: rgb(67, 67, 255);margin-top: 15px;font-weight: 600;">
+            DOWNLOAD CV</div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div src="img/img1 (2).jpg" class="d-block w-70" alt="..."
+          style="width: 1000px; height: 100vh;background-image: url(img/img1\ \(2\).jpg);background-repeat: no-repeat;background-position: center;">
+          &nbsp; <h2 class="h2" style="margin-top: 25%; margin-left: 100px;">Hi! I AM
+            <span> INSHARAH </span>
+          </h2>
+          <p id="p" style=" margin-left: 70px;">THis is my introduction template made by <a
+              href="https://github.com/DeveloperInsharah">@ Insharah Irfan</a></p>
+          <div class="button"
+            style="border: 2px solid;margin-left: 70px !important;width: 180px;height: 50px; color: black; margin-left: 5%;text-align: center;padding-top: 9px;color: rgb(67, 67, 255);margin-top: 15px;font-weight: 600;">
+            DOWNLOAD CV</div>
+        </div>
+      </div>
+    </div>
+    <div class="aboutus w-100 h-100">
+      <p class="mt-5 ms-5"
+        style="letter-spacing: 5px;text-transform: uppercase;font-size: 0.9rem;color: lightslategray; font-weight: 600;">
+        About Us</p>
+      <h2 class="mt-3 text-uppercase ms-5 mb-5"
+        style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 1.3em;font-weight: 600;">Who Am I?</h2>
+      <p class="mx-5 w-60 mt-5 mb-5" style="color: lightslategray;"><span class="fw-bold">Hi! I'm Developer
+          Insharah</span> On her way she met a copy. The copy warned the Little Blind Text, that where it came from it
+        would have been rewritten a thousand times and everything that was left from its origin would be the word "and"
+        and the Little Blind Text should turn around and return to its own, safe country. </p>
+      <p class="mx-5 w-60 mt-5 mb-5" style="color: lightslategray;">Even the all-powerful Pointing has no control about
+        the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of
+        Lorem Ipsum decided to leave for the far World of Grammar.</p>
+      <div class="card-group border-secondar ms-5">
+        <div class="border-bottom border-primary-subtle p-2 border-3">
+          <i class="card-img-top ri-lightbulb-line"></i>
+          <div class="card-body">
+            <h5 class="card-title">WEB DEVELOPMENT</h5>
+          </div>
+        </div>
+        <div class="border-bottom border-danger-subtle p-2 border-3">
+          <i class="card-img-top ri-map-pin-line"></i>
+          <div class="card-body">
+            <h5 class="card-title">GRAPHIC DESIGNING</h5>
+          </div>
+        </div>
+        <div class="border-bottom border-warning p-2 border-3">
+          <i class="card-img-top ri-coins-line"></i>
+          <div class="card-body">
+            <h5 class="card-title">VECTOR DESIGNING</h5>
+          </div>
+        </div>
+        <div class="border-bottom border-primary p-2 border-3">
+          <i class="card-img-top ri-smartphone-line"></i>
+          <div class="card-body">
+            <h5 class="card-title">POST DESIGNING</h5>
+          </div>
+        </div>
+      </div>
+      <div class="w-60 mt-5 ms-5 me-5 p-5 rounded"
+        style="background-color: #FFC107; margin-left: 55px !important;height: 250px; margin-top: 90px !important;">
+        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;line-height: 1.5 !important;">I am happy to
+          know you
+          <span class="d-block">that 300+ projects done sucessfully!</span>
+        </h1>
+        <div class="style" style="border: 1px solid; width: 100px;height:35px; text-align: center;padding-top: 5px;">
+          Hire Me</div>
+      </div>
+      <div class="what w-100 mt-2" style="height: 165vh;">
+        <p class="mt-5 ms-5"
+          style="letter-spacing: 5px;text-transform: uppercase;font-size: 0.9rem;color: lightslategray; font-weight: 600;">
+          What I do?</p>
+        <h2 class="mt-3 text-uppercase ms-5 mb-5"
+          style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 1.3em;font-weight: 600;letter-spacing: 4px; width: 300px;line-height: 35px;">
+          Here Are Some of My Experties</h2>
+        <div class="d-flex flex-wrap gap-4 align-items-center justify-content-center">
+          <div class="card"
+            style=" outline: none !important; border: none !important; border-bottom:3px solid #64C7CC !important; border-radius: 0px !important;">
+            <img src="img/1.png" class="card-img-top" alt="...">
+            <i class="ri-lightbulb-flash-line"
+              style="font-size: 3rem;color: black;position: absolute;top: -18px; left: 100px;z-index: 5; color: white;"></i>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+          <div class="card"
+            style=" outline: none !important; border: none !important; border-bottom:3px solid #FE0000 !important; border-radius: 0px !important;">
+            <img src="img/2.png" class="card-img-top" alt="...">
+            <i class="ri-coin-line"
+              style="font-size: 3rem;color: black;position: absolute;top: -18px; left: 100px;z-index: 5; color: white;"></i>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+
+            </div>
+          </div>
+          <div class="card"
+            style=" outline: none !important; border: none !important; border-bottom:3px solid #FEA500 !important; border-radius: 0px !important;">
+            <img src="img/3.png" class="card-img-top" alt="...">
+            <i class="ri-smartphone-line"
+              style="font-size: 3rem;color: black;position: absolute;top: -29px; left: 100px;z-index: 5; color: white;"></i>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+          </div>
+          <div class="card"
+            style=" outline: none !important; border: none !important; border-bottom:3px solid #80368F !important; border-radius: 0px !important;">
+            <img src="img/4.png" class="card-img-top" alt="...">
+            <i class="ri-building-3-line"
+              style="font-size: 3rem;color: black;position: absolute;top: -29px; left: 100px;z-index: 5; color: white;"></i>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+          </div>
+          <div class="card"
+            style=" outline: none !important; border: none !important; border-bottom:3px solid #005236 !important; border-radius: 0px !important;">
+            <img src="img/5.png" class="card-img-top" alt="...">
+            <i class="ri-coin-line"
+              style="font-size: 3rem;color: black;position: absolute;top: -18px; left: 100px;z-index: 5; color: white;"></i>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+          </div>
+          <div class="card"
+            style=" outline: none !important; border: none !important; border-bottom:3px solid #010080 !important; border-radius: 0px !important;">
+            <img src="img/6.png" class="card-img-top" alt="...">
+            <i class="ri-smartphone-line"
+              style="font-size: 3rem;color: black;position: absolute;top: -29px; left: 100px;z-index: 5; color: white;"></i>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="container border d-flex justify-content-around" style="height:40vh!important;background-repeat: no-repeat ; background-position: center;background-size: cover;background-color: rgba(0, 0, 0, 0.875); background-image: url(img/cover_bg_1.jpg);">
+       <div class="d-flex align-items-center justify-content-center" ><figure class="fs-1 text-white text-center fw-bold"> 309<figcaption class="fs-5 text-uppercase"> cups of coffeee</figcaption></figure></div>
+       <div class="d-flex align-items-center justify-content-center" ><figure class="fs-1 text-white text-center fw-bold"> 356<figcaption class="fs-5 text-uppercase"> projects</figcaption></figure></div>
+       <div class="d-flex align-items-center justify-content-center" ><figure class="fs-1 text-white text-center fw-bold"> 30<figcaption class="fs-5 text-uppercase"> clients</figcaption></figure></div>
+       <div class="d-flex align-items-center justify-content-center" ><figure class="fs-1 text-white text-brown fw-bold"> 10<figcaption class="fs-5 text-uppercase"> partners</figcaption></figure></div>
+        </div>
+        <div class="skills container pt-5" style="height: 120vh;">
+          <p class="mt-5 ms-5"
+        style="letter-spacing: 5px;text-transform: uppercase;font-size: 0.9rem;color: lightslategray; font-weight: 600;">
+        my speciality</p>
+      <h2 class="mt-3 text-uppercase ms-5 mb-5"
+        style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 1.3em;font-weight: 600;">MY SKILLS</h2>
+        <p class="ms-5 me-5 lh-lg" style="color: lightslategray;">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+        <div class="conatiner-fluid d-flex flex-wrap justify-content-start" style="height: 60vh;">
+          <div>
+          <p class="text-uppercase ms-5 mt-5 fw-bold">HTML</p>
+          <div class="progress ms-5" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 350px !important; height: 1.5vh !important;">
+            <div class="progress-bar bg-red text-white fw-bold progress-bar-striped progress-bar-animated" style="width: 100%">100%</div>
+          </div>
+          </div>
+          <div>
+          <p class="text-uppercase ms-5 mt-5 d-flex flex-wrap fw-bold">CSS</p>
+          <div class="progress ms-5" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 350px !important; height: 1.5vh !important;">
+            <div class="progress-bar bg-warning text-white fw-bold progress-bar-striped progress-bar-animated" style="width: 99%">99%</div>
+          </div>
+          </div>
+          <div>
+            <p class="text-uppercase ms-5 mt-5 d-flex flex-wrap fw-bold">BOOT STRAP</p>
+            <div class="progress ms-5" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 350px !important; height: 1.5vh !important;">
+              <div class="progress-bar bg-danger text-white fw-bold progress-bar-striped progress-bar-animated" style="width: 60%">60%</div>
+            </div>
+        </div>
+        <div>
+          <p class="text-uppercase ms-5 mt-5 d-flex flex-wrap fw-bold">VECTOR DESIGNING</p>
+          <div class="progress ms-5" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 350px !important; height: 1.5vh !important;">
+            <div class="progress-bar bg-info text-white fw-bold progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
+          </div>
+      </div>
+      <div>
+        <p class="text-uppercase ms-5 mt-5 d-flex flex-wrap fw-bold">POST DESIGNING</p>
+        <div class="progress ms-5" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 350px !important; height: 1.5vh !important;">
+          <div class="progress-bar bg-success text-white fw-bold progress-bar-striped progress-bar-animated" style="width: 100%">100%</div>
+        </div>
+    </div>
+    <div>
+      <p class="text-uppercase ms-5 mt-5 d-flex flex-wrap fw-bold">MICRO SOFT OFFICE</p>
+      <div class="progress ms-5" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 350px !important; height: 1.5vh !important;">
+        <div class="progress-bar text-white fw-bold progress-bar-striped progress-bar-animated" style="width: 95%">95%</div>
+      </div>
+  </div>
+        </div>
+    </div>
+    <div class="skills container pt-5" style="height: 110vh;">
+      <p class="mt-5 ms-5"
+    style="letter-spacing: 5px;text-transform: uppercase;font-size: 0.9rem;color: lightslategray; font-weight: 600;">
+    my education</p>
+  <h2 class="mt-3 text-uppercase ms-5 mb-5"
+    style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 1.3em;font-weight: 600;">EDUCATION</h2>
+    <div class="accordion accordion-flush" id="accordionFlushExample" style="width: 800px;margin-left: 50px !important; margin-top: 50px !important;">
+      <div class="accordion-item my-1 border">
+        <h2 class="accordion-header border">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            MASTER DEGREE GRAPHIC DESIGN
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</div>
+        </div>
+      </div>
+      <div class="accordion-item my-1 border">
+        <h2 class="accordion-header border">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            BACHELOR DEGREE OF COMPUTER SCIENCE 
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+            <ul>
+              <li>Separated they live in Bookmarksgrove right</li>
+              <li>Separated they live in Bookmarksgrove right</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item my-1 border">
+        <h2 class="accordion-header border">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            DEPLOMA IN INFORMATION TECHNOLOGY
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</div>
+        </div>
+        </div>
+        <div class="accordion-item my-1 border">
+          <h2 class="accordion-header border">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+              MASTER DEGREE IN WEB DEVELOPMENT
+            </button>
+          </h2>
+          <div id="flush-collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</div>
+          </div>
+        </div>
+        <div class="accordion-item my-1 border">
+          <h2 class="accordion-header border">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+              HIGH SCHOOL SECONDARY EDUCATION
+            </button>
+          </h2>
+          <div id="flush-collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.          </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="experience" style="height: 170vh;"><p class="mt-5 ms-5"
+      style="letter-spacing: 5px;text-transform: uppercase;font-size: 0.9rem;color: lightslategray; font-weight: 600;">
+      My EXperience</p>
+    <h2 class="mt-3 text-uppercase ms-5 mb-5"
+      style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 1.3em;font-weight: 600; word-spacing: 10px;letter-spacing: 2px;">Experience</h2>
+      <div class="d-flex" style="width: 100%;padding: 0px 20px;height: 140vh;">
+        <div style=" width: 10%;height: 100%;"><div style="background-color: rgb(168, 168, 168);height: 100%; width: 10%;margin: auto;"><img src="img/Screenshot_2024-09-08_055549-removebg-preview.png" alt="" style="margin-left: -42px;width: 80px;height: 70px; margin-top: 15px;"><img src="img/Screenshot_2024-09-08_055746-removebg-preview.png" alt="" style="margin-left: -35px;width: 70px;height: 90px; margin-top: 235px;"><img src="img/Screenshot_2024-09-08_055730-removebg-preview.png" alt="" style="margin-left: -35px;width: 70px;height: 80px; margin-top: 235px;"></div></div>
+        <div style=" width: 90%;height: 100%;margin-left: 20px;"><div style="background-image: url(img/Untitled.png);background-position: center;background-size: contain;background-repeat: no-repeat;width: 70%;height: 300px;">&nbsp;<h2 style="margin-top: 30px;margin-left: 60px;">Full Stack Developer</h2><p style="margin-left: 50px;margin-right: 50px;">Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p></div><div style="background-image: url(img/Untitled.png);background-position: center;background-size: contain;background-repeat: no-repeat;width: 70%;height: 300px;">&nbsp;<h2 style="margin-top: 30px;margin-left: 60px;">Frontened Developer</h2><p style="margin-left: 50px;margin-right: 50px;">Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p></div><div style="background-image: url(img/Untitled.png);background-position: center;background-size: contain;background-repeat: no-repeat;width: 70%;height: 300px;">&nbsp;<h2 style="margin-top: 30px;margin-left: 60px;">Backened Developer</h2><p style="margin-left: 50px;margin-right: 50px;">Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p></div></div>
+      </div>
+  </div>
+    <div class="skills container pt-5" style="height: 180vh;">
+      <p class="mt-5 ms-5"
+    style="letter-spacing: 5px;text-transform: uppercase;font-size: 0.9rem;color: lightslategray; font-weight: 600;">
+    My Work</p>
+  <h2 class="mt-3 text-uppercase ms-5 mb-5"
+    style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 1.3em;font-weight: 600; word-spacing: 10px;letter-spacing: 2px;">RECENT WORK</h2>
+    <div class=" d-flex flex-wrap justify-content-around text-dark" style="width: 90%;height: 140vh;">
+    <div class="img d-flex align-items-center justify-content-center" style="background-image: url(img/a1.jpg);background-repeat: no-repeat; background-position: center; background-size: cover;"> <h1 style="visibility: hidden;">ASSIGNMENT 1</h1></div>
+    <div class="img d-flex align-items-center justify-content-center" style="background-image: url(img/a2.jpg);background-repeat: no-repeat; background-position: center; background-size: cover;"><h1 style="visibility: hidden;">ASSIGNMENT 2</h1></div>
+    <div class="img d-flex align-items-center justify-content-center"  style="background-image: url(img/a3.jpg);background-repeat: no-repeat; background-position: center; background-size: cover;"><h1 style="visibility: hidden;">ASSIGNMENT 3</h1></div>
+    <div class="img d-flex align-items-center justify-content-center"style="background-image: url(img/a4.jpg);background-repeat: no-repeat; background-position: center; background-size: cover;"><h1 style="visibility: hidden;">ASSIGNMENT 4</h1></div>
+    <div class="img d-flex align-items-center justify-content-center"style="background-image: url(img/a5.jpg);background-repeat: no-repeat; background-position: center; background-size: cover;"><h1 style="visibility: hidden;">ASSIGNMENT 5</h1></div>
+    <div class="img d-flex align-items-center justify-content-center"style="background-image: url(img/a6.jpg);background-repeat: no-repeat; background-position: center; background-size: cover;"><h1 style="visibility: hidden;">ASSIGNMENT 6</h1></div>
+  </div>
+  <footer class="conatiner-fluid bg-dark" style="width: 106%;margin-left: -50px;margin-top: 5px !important; height: 60px;padding-top:10px ;color: white;padding-left: 250px;font-size: 1.7rem;">This portfolio is made by <a href="https://github.com/DeveloperInsharah" style="text-decoration: none;color: white;">@ Insharah Irfan</a></footer>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
